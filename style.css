@@ -52,20 +52,48 @@ section h2 {
 
 .money-wrapper {
 background-color: white;
-outline: .1rem solid #94a3b8;
+outline: 0.1rem solid #94a3b8;
 
 width: 27rem;
 padding: 1.6rem;
 border-radius: .8rem;
+
+display: flex;
+align-items: center;
+
+position: relative;
 }
 
 
 
-.money-wrapper:hover {
+.money-wrapper:hover,
+.money-wrapper:has(:focus) {
 outline: 0.25rem solid #7C3AED;    
 }
 
 
+/*AMOUNT*/
+
+.amount {
+    border: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: var(--text-color);
+    width: 50%;
+}
+
+.amount:focus {
+    outline: 0;
+}
+
+/*DROPDOWN*/
+.dropdown {
+    width: 12.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 
 .cambio .wrapper {

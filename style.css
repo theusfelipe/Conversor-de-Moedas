@@ -181,7 +181,6 @@ li {
     align-items: center;
     gap: .8rem;
     cursor: pointer;
-    
 }
 
 
@@ -219,6 +218,9 @@ li {
     cursor: pointer;
 }
 
+
+
+
 .chart-controls button:hover,
 .chart-controls button.active {
     background-color: #7C3AED;
@@ -226,6 +228,9 @@ li {
     border-radius: 999px;
     padding: .4rem .8rem;
 }
+
+
+
 
 @media (max-width: 48rem) { 
     main {

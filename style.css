@@ -89,10 +89,54 @@ outline: 0.25rem solid #7C3AED;
 
 /*DROPDOWN*/
 .dropdown {
+    --bg-hover:#EDE9FE;
     width: 12.4rem;
+
     position: absolute;
+
     top: 0;
     right: 0;
+}
+
+
+.selected {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    border-radius: 0 0.8rem 0.8rem 0;
+    padding: 1.6rem;
+    cursor: pointer;
+}
+
+
+.selected::before{
+    content: "";
+    height: 2.4rem;
+    width: 0.1rem;
+   background-color:  #94A3B8;
+   
+}
+
+
+
+.selected::after {
+    content: "";
+}
+
+
+
+
+
+
+
+.selected:hover {
+   background-color: var(--bg-hover); 
+}
+
+.fi.fis {
+font-size: 2.4rem;
+border-radius: 50%;
 }
 
 
